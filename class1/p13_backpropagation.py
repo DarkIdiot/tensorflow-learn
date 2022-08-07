@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 w = tf.Variable(tf.constant(5, dtype=tf.float32))
-lr = 0.999
+lr = 0.25
 epoch = 40
 
 for epoch in range(epoch):  # for epoch 定义顶层循环，表示对数据集循环epoch次，此例数据集数据仅有1个w,初始化时候constant赋值为5，循环40次迭代。
