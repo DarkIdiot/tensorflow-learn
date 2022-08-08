@@ -3,7 +3,8 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from matplotlib import pyplot as plt
-
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 # 读入数据/标签 生成x_train y_train
 df = pd.read_csv('dot.csv')
 x_data = np.array(df[['x1', 'x2']])
